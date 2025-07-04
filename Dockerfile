@@ -20,7 +20,7 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 # CMD ["python", "init_db.py"]
 
 # Expose port for Render
-EXPOSE 8000
+EXPOSE 8080
 
 # Run the app using uvicorn
 CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
